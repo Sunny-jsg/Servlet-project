@@ -1,11 +1,219 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+	crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+	integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+	integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+	crossorigin="anonymous"></script>
+<script
+	src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+	integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet" href="nextview.css">
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
-<h1> Welcome To My Page </h1>
+	<div id="sectionHome">
+		<div class="bg-container d-flex flex-column justify-content-end">
+			<div class="tourism-card">
+				<h1 class="main-heading">Tourism</h1>
+				<p class="paragraph">Plan your trip.</p>
+				<button class="button" onclick="display('sectionFavouritePlace')">Get
+					Started</button>
+			</div>
+		</div>
 
+	</div>
+	<div id="sectionFavouritePlace">
+		<div class="favourite-places-bg-container">
+			<h1 class="favourite-places-heading">Favourite Places</h1>
+
+			<div class="favourite-place-card-container d-flex flex-row"
+				onclick="display('sectionTajMahalDetailedView')">
+				<div>
+					<h1 class="favourite-place-card-heading">Taj Mahal</h1>
+					<p class="favourite-place-card-description">If there was just
+						one symbol to represent all of India, it would be the Taj Mahal</p>
+				</div>
+				<img
+					src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png"
+					class="favourite-place-card-image" />
+			</div>
+
+			<div class="favourite-place-card-container d-flex flex-row"
+				onclick="display('sectionGoldenTempleDetailedView')">
+				<div>
+					<h1 class="favourite-place-card-heading">Golden Temple</h1>
+					<p class="favourite-place-card-description">Amritsar is
+						world-famous for the beautiful and highly revered Golden Temple</p>
+				</div>
+				<img
+					src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png"
+					class="favourite-place-card-image" />
+			</div>
+
+			<div class="favourite-place-card-container d-flex flex-row"
+				onclick="display('sectionMysorePalaceDetailedView')">
+				<div>
+					<h1 class="favourite-place-card-heading">Mysore Palace</h1>
+					<p class="favourite-place-card-description">The Mysore Palace
+						is a historical palace and the royal residence at Mysore .</p>
+				</div>
+				<img
+					src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png"
+					class="favourite-place-card-image" />
+			</div>
+
+			<div class="favourite-place-card-container d-flex flex-row"
+				onclick="display('sectionVaranasiTempleDetailedView')">
+				<div>
+					<h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+					<p class="favourite-place-card-description">Varanasi Temple is
+						most famous Hindu temples dedicated to Lord Shiva</p>
+				</div>
+				<img
+					src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png"
+					class="favourite-place-card-image" />
+				<button class="btn btn-dark"
+					onclick="display('sectionTajMahalDetailedView')">Back</button>
+			</div>
+
+		</div>
+
+	</div>
+	<div id="sectionTajMahalDetailedView">
+		<div class="detailed-view-bg-container">
+			<h1 class="detailed-view-heading">Detailed View</h1>
+			<div class="detailed-view-card-container">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item"
+						src="https://www.youtube.com/embed/EvZ3oeKDExw?si=xjNwVTuL7kRFbvs8"
+						allowfullscreen></iframe>
+				</div>
+
+				<div class="detailed-view-text-container">
+					<h1 class="detailed-view-card-heading">Taj Mahal</h1>
+					<p class="detailed-view-card-description">The Taj Mahal
+						incorporates and expands on design traditions of Indo-Islamic and
+						earlier Mughal architecture. Specific inspiration came from
+						successful Timurid and Mughal buildings including the Gur-e Amir
+						(the tomb of Timur, progenitor of the Mughal dynasty, in
+						Samarkand),[20] Humayun's Tomb which inspired the Charbagh gardens
+						and hasht-behesht (architecture) plan of the site,
+						Itmad-Ud-Daulah's Tomb (sometimes called the Baby Taj), and Shah
+						Jahan's own Jama Masjid in Delhi. While earlier Mughal buildings
+						were primarily constructed of red sandstone, Shah Jahan promoted
+						the use of white marble inlaid with semi-precious stones.
+						Buildings under his patronage reached new levels of
+						refinement.[21]</p>
+				</div>
+			</div>
+			<button class="btn btn-dark"
+				onclick="display('sectionFavouritePlace')">Back</button>
+		</div>
+
+
+	</div>
+	<div id="sectionGoldenTempleDetailedView">
+		<div class="detailed-view-bg-container">
+			<h1 class="detailed-view-heading">Detailed View</h1>
+			<div class="detailed-view-card-container">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item"
+						src="https://www.youtube.com/embed/9XomU7UcOLc?si=cjZd1ck8yFIsAY11"
+						allowfullscreen></iframe>
+				</div>
+
+				<div class="detailed-view-text-container">
+					<h1 class="detailed-view-card-heading">Golden Temple</h1>
+					<p class="detailed-view-card-description">Amritsar’s Golden
+						Temple is the most significant shrine in Sikhism, and has also
+						been the site of various important political demonstrations over
+						the course of the 20th century.The Golden Temple is in fact a
+						small part of a much bigger gurdwara complex, known as the
+						Harmandir Sahib. Guru Ram Das acquired the land for the gurdwara
+						in the 16th century. His successor, Guru Arjan began construction,
+						building it lower than the rest of the city in a gesture of
+						humility. The compound was also designed to open on all signs to
+						mirror the fact that it is open to all. After the site’s
+						inauguration in 1589, the pool was filled with water. The
+						completion of the Golden Temple was a major milestone for Sikhism
+						as it provided a central rallying point for the Sikh</p>
+				</div>
+			</div>
+			<button class="btn btn-dark"
+				onclick="display('sectionFavouritePlace')">Back</button>
+		</div>
+
+
+	</div>
+	<div id="sectionMysorePalaceDetailedView">
+		<div class="detailed-view-bg-container">
+			<h1 class="detailed-view-heading">Detailed View</h1>
+			<div class="detailed-view-card-container">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item"
+						src="https://www.youtube.com/embed/aQLZ8LRBKp4?si=gWCMppVN6OuXgxyF"
+						allowfullscreen></iframe>
+				</div>
+
+				<div class="detailed-view-text-container">
+					<h1 class="detailed-view-card-heading">Mysore Palace</h1>
+					<p class="detailed-view-card-description">Mysore Palace, also
+						known as Amba Vilas Palace, is a historical palace and a royal
+						residence (house). It is located in Mysore, Karnataka, India. It
+						used to be the official residence of the Wadiyar dynasty and the
+						seat of the Kingdom of Mysore. The palace is in the centre of
+						Mysore, and faces the Chamundi Hills eastward. Mysore is commonly
+						described as the 'City of the Palaces', and there are seven
+						palaces including this one. However, the Mysore Palace refers
+						specifically to the one within the new fort.</p>
+				</div>
+			</div>
+			<button class="btn btn-dark"
+				onclick="display('sectionFavouritePlace')">Back</button>
+		</div>
+
+
+	</div>
+	<div id="sectionVaranasiTempleDetailedView">
+		<div class="detailed-view-bg-container">
+			<h1 class="detailed-view-heading">Detailed View</h1>
+			<div class="detailed-view-card-container">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item"
+						src="https://www.youtube.com/embed/oVHodsZgdyA?si=mdnYucy3JecaWclk"
+						allowfullscreen></iframe>
+				</div>
+
+				<div class="detailed-view-text-container">
+					<h1 class="detailed-view-card-heading">Varanasi Temple</h1>
+					<p class="detailed-view-card-description">Kashi Vishwanath
+						Temple is a Hindu temple dedicated to Shiva. It is located in
+						Vishwanath Gali, in Varanasi, Uttar Pradesh, India. The temple is
+						a Hindu pilgrimage site and is one of the twelve Jyotirlinga
+						shrines. The presiding deity is known by the names Vishwanath and
+						Vishweshwara (IAST: Viśvanātha and Viśveśvara), literally meaning
+						Lord of the Universe. The temple had been demolished several
+						times, most recently by Mughal Emperor Aurangzeb, who constructed
+						the Gyanvapi Mosque on its site.[1] The current structure was
+						built on an adjacent site by the Maratha ruler Ahilyabai Holkar of
+						Indore in 1780.[2] Since 1983, the temple has been managed by a
+						board of trustees set up by the government of Uttar Pradesh.[3]</p>
+				</div>
+			</div>
+			<button class="btn btn-dark"
+				onclick="display('sectionFavouritePlace')">Back</button>
+		</div>
+	</div>
+	<script type="text/javascript"
+		src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
 </body>
 </html>
